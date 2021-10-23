@@ -1,43 +1,49 @@
 # rlagents
-## Implementing RL agents for OpenAI Gym from Scratch
+## Understanding Reinforcement Learning and Implementing RL agents for OpenAI Gym from Scratch
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-  * [Tech Stack](#tech-stack)
-  * [File Structure](#file-structure)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Results and Demo](#results-and-demo)
-* [Future Work](#future-work)
-* [Troubleshooting](#troubleshooting)
-* [Contributors](#contributors)
-* [Acknowledgements and Resources](#acknowledgements-and-resources)
-* [License](#license)
+- [rlagents](#rlagents)
+  - [Understanding Reinforcement Learning and Implementing RL agents for OpenAI Gym from Scratch](#understanding-reinforcement-learning-and-implementing-rl-agents-for-openai-gym-from-scratch)
+  - [Table of Contents](#table-of-contents)
+  - [About The Project](#about-the-project)
+- [Reinforcement Learning](#reinforcement-learning)
+    - [Tech Stack](#tech-stack)
+    - [File Structure](#file-structure)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [Usage](#usage)
+  - [Results and Demo](#results-and-demo)
+  - [Future Work](#future-work)
+  - [Troubleshooting](#troubleshooting)
+  - [Contributors](#contributors)
+  - [Acknowledgements and Resources](#acknowledgements-and-resources)
+  - [License](#license)
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-[![Product Name Screen Shot][product-screenshot]](https://example.com)  
+
+# Reinforcement Learning 
+![cool icon](https://i.imgur.com/bUeBdxC.png)
 
 Aim and Description of project.  
 Refer this [documentation](https://link/to/report/)
 
 ### Tech Stack
-This section should list the technologies you used for this project. Leave any add-ons/plugins for the prerequisite section. Here are a few examples.
-* [OpenAI gym](https://gym.openai.com/docs/)
-* [OpenCV](https://opencv.org/)
-* [ROS](https://www.ros.org/)  
+These are some of the technologies we used in this project. 
+- [OpenAI gym](https://gym.openai.com/)
+- [Stable-baselines3](https://stable-baselines3.readthedocs.io/en/master/)
+- [Jupyter Notebook](https://jupyter.org/)  
 
 ### File Structure
     .
     ├── app.py                  # Explain the function preformed by this file in short
     ├── docs                    # Documentation files (alternatively `doc`)
     │   ├── report.pdf          # Project report
-    │   └── results             # Folder containing screenshots, gifs, videos of results
+    │   └── notes               # Folder containing markdown notes of lectures 
     ├── src                     # Source files (alternatively `lib` or `app`)
     ├── ...
     ├── test                    # Test files (alternatively `spec` or `tests`)
@@ -57,25 +63,37 @@ This section should list the technologies you used for this project. Leave any a
 
 ### Prerequisites
 
-* See [SETUP.md](https://link/to/setup.md) if there are plenty of instructions
-* List of softwares with version tested on 
-```sh
-How to install them
-```
+- OpenAI gym 
+  - You can visit the [OpenAI gym Repo](https://github.com/openai/gym) or their [documentation](https://gym.openai.com/docs/) for the installation steps.
 
-* **ESP-IDF v4.0 and above**
+- Stable-baselines3 
+  - You can visit the installation section of Stable-baselines3 docs [here](https://stable-baselines3.readthedocs.io/en/master/guide/install.html)
 
-  You can visit the [ESP-IDF Programmming Guide](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html#installation-step-by-step) for the installation steps.
+- Jupyter-notebook
+  - refer [here](https://jupyter.org/install)
   
-* See if you can make requirements.txt  
+* For OpenAI gym 
 ```sh
-pip install -r "requirements.txt"
+pip install gym
+
+pip install gym[atari]    #For all atari dependencies
+
+pip install gym[all]    #For all dependencies
 ```
+- For Stable-baselines3
+```sh
+pip install stable-baselines3
+
+pip install stable-baselines3[extra]    #use this if you want dependencies like Tensorboard, OpenCV, Atari-py
+```
+- Note: Some shells such as Zsh require quotation marks around brackets, i.e.
+  
+```pip install 'gym[all]' ```
 
 ### Installation
 1. Clone the repo
 ```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/himanshu-02/rlagents
 ```
 
 
@@ -100,26 +118,29 @@ Use this space to show useful examples of how a project can be used. Additional 
 <!-- FUTURE WORK -->
 ## Future Work
 * See [todo.md](https://todo.md) for seeing developments of this project
-- [x] Task 1
-- [x] Task 2
+- [ ] Making a custom environment 
+- [ ] Task 2
 - [ ] Task 3
 - [ ] Task 4
 
 
 <!-- TROUBLESHOOTING -->
 ## Troubleshooting
-* Common errors while configuring the project
+* Make sure you are using the correct environment name 
+* Incase you missed it, Note: Some shells such as Zsh require quotation marks around brackets, i.e.
+  
+```pip install 'gym[all]' ```
 
 
 <!-- CONTRIBUTORS -->
 ## Contributors
-* [Member Name](https://github.com/id)
-* [Member Name](https://github.com/id)
+* [Chirag Shelar](https://github.com/Locoya)
+* [Himanshu Chougule](https://github.com/himanshu-02)
 
 
 <!-- ACKNOWLEDGEMENTS AND REFERENCES -->
 ## Acknowledgements and Resources
-* [SRA VJTI](http://sra.vjti.info/) Eklavya 2020  
+* [SRA VJTI](http://sra.vjti.info/) | Eklavya 2021  
 * Refered [this](https://link) for achieving this  
 ...
 
