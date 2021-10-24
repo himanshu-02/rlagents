@@ -111,17 +111,9 @@ These are some of the technologies we used in this project.
     │   ├── report.pdf          # Project report
     │   └── notes               # Folder containing markdown notes of lectures 
     ├── src                     # Source files (alternatively `lib` or `app`)
-    ├── ...
-    ├── test                    # Test files (alternatively `spec` or `tests`)
-    │   ├── benchmarks          # Load and stress tests
-    │   ├── integration         # End-to-end, integration tests (alternatively `e2e`)
-    │   └── unit                # Unit tests
-    ├── ...
-    ├── tools                   # Tools and utilities
     ├── LICENSE
     ├── README.md 
-    ├── Setup.md                # If Installation instructions are lengthy
-    └── todo.md                 # If Future developments and current status gets lengthy
+ 
     
 
 <!-- GETTING STARTED -->
