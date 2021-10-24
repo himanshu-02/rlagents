@@ -49,7 +49,7 @@
 - To solve rl agents in OpenAI gym
 
 ## Theory: 
-Refer our [documentation](https://link/to/report/) for detailed analysis and brief overview of our project. 
+Refer our [documentation](https://docs.google.com/document/d/1DccC34vfk1-0BPo3-_cWzmp5WbfnomgBwjTl0GaGUIU/edit?usp=sharing) for detailed analysis and brief overview of our project. 
 
 ---
  
@@ -111,6 +111,8 @@ These are some of the technologies we used in this project.
     │   ├── report.pdf          # Project report
     │   └── notes               # Folder containing markdown notes of lectures 
     ├── src                     # Source files (alternatively `lib` or `app`)
+    │   ├── Training/saved      # Trained Model of CartPole, CarRacing
+    │   └── Agent Codes         # All the agent codes
     ├── LICENSE
     ├── README.md 
  
@@ -219,7 +221,6 @@ You can use our saved models as well.
 <!-- ACKNOWLEDGEMENTS AND REFERENCES -->
 ## Acknowledgements and Resources
 * [SRA VJTI](http://sra.vjti.info/) | Eklavya 2021  
-* Refered [this](https://link) for achieving this  
 ...
 
 
