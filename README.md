@@ -16,13 +16,20 @@
     - [Multi armed Bandit Problem](#multi-armed-bandit-problem)
     - [Epsilon Greedy Algorithm](#epsilon-greedy-algorithm)
     - [OpenAI gym](#openai-gym)
+    - [Agents used](#agents-used)
+    - [Algorithms used](#algorithms-used)
     - [Tech Stack](#tech-stack)
     - [File Structure](#file-structure)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
   - [Usage](#usage)
-  - [Results and Demo](#results-and-demo)
+  - [## Results and Demo](#-results-and-demo)
+    - [CartPole](#cartpole)
+    - [Mountain Car](#mountain-car)
+    - [Lunar Lander](#lunar-lander)
+    - [Taxi](#taxi)
+    - [Car racing](#car-racing)
   - [Future Work](#future-work)
   - [Troubleshooting](#troubleshooting)
   - [Contributors](#contributors)
@@ -77,8 +84,19 @@ Low values of epsilon correspond to less exploration and more exploitation, ther
 
 ### OpenAI gym
 - Gym is a toolkit for developing and comparing reinforcement learning algorithms. It supports teaching agents everything from walking to playing games like Pong or Pinball.
-- 
+  
+### Agents used
+- CartPole
+- Mountain-Car
+- LunarLander
+- Self Driving Racing-Car
+- Taxi Driver 
 
+### Algorithms used
+- Epsilon Greedy
+- PPO
+- Q-Learning
+- DQN 
 
 ### Tech Stack
 These are some of the technologies we used in this project. 
@@ -148,19 +166,39 @@ git clone https://github.com/himanshu-02/rlagents
 <!-- USAGE EXAMPLES -->
 ## Usage
 ```
-How to run the driver code
+Clone the environment.
+Use our codes on jupyter notebook.
+You can use our saved models as well. 
 ```
 
 
 <!-- RESULTS AND DEMO -->
 ## Results and Demo
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space.  
-[**result screenshots**](https://result.png)  
-![**result gif or video**](https://result.gif)  
+---
+### CartPole
+- Maximum reward of 200 is achieved by the agent
 
-| Use  |  Table  |
-|:----:|:-------:| 
-| For  | Comparison|
+![Cartpole](docs/videos/solved_cartpole.gif)
+
+### Mountain Car
+- First clear before 200 episodes every time 
+
+![mountian](docs/videos/solved_mountaincar.gif)
+
+### Lunar Lander
+- Solved using DQN and after training good results are achieved
+
+![Lunar](docs/videos/solved_lunar_lander.gif)
+
+### Taxi 
+- Solved using Q learning and done perfectly
+
+![taxi](docs/videos/solved_taxicar.gif)
+
+### Car racing
+- Solved using PPO after training for 2m steps, higest score around 700/900 is achieved
+
+![car](docs/videos/solved_racing_car.gif)
 
 
 <!-- FUTURE WORK -->
