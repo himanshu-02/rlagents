@@ -198,10 +198,9 @@ You can use our saved models as well.
 <!-- FUTURE WORK -->
 ## Future Work
 * See [todo.md](https://todo.md) for seeing developments of this project
-- [ ] Making a custom environment 
-- [ ] Task 2
-- [ ] Task 3
-- [ ] Task 4
+- [ ] Creating a custom environment 
+- [ ] Coding Agents using various Models such as Deep Q-Learning, PPO, etc to train the custom environment and compare the results.
+- [ ] Completing more advanced environments available on OpenAI gym 
 
 
 <!-- TROUBLESHOOTING -->
@@ -220,7 +219,7 @@ You can use our saved models as well.
 
 <!-- ACKNOWLEDGEMENTS AND REFERENCES -->
 ## Acknowledgements and Resources
-* [SRA VJTI](http://sra.vjti.info/) | Eklavya 2021  
+* [SRA VJTI](https://sravjti.in/) | Eklavya 2021  
 ...
 
 
