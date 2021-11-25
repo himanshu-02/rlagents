@@ -206,7 +206,7 @@ evaluate_policy(model, env, n_eval_episodes = 3, return_episode_rewards = True, 
 
 ## Conclusion:
 
-We hope this blog gave you a brief idea about Reinforcement Learning and an introduction to libraries such as OpenAI gym and stable-baselines3. 
+We hope this blog gave you a brief idea about Reinforcement Learning and an introduction to libraries such as OpenAI gym and stable-baselines3. You can refer our git repo [here](https://github.com/himanshu-02/rlagents) for a more detailed introduction to Reinforcement Learning.  
 
 ps: Special thanks to our mentors in SRA who helped us along the way.
 
