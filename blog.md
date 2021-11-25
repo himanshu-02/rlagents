@@ -45,21 +45,21 @@ This is a pretty well-known diagram of what actually happens in RL in a simplifi
  
 ### To explain these terms:
 
-- There's a set of states, then a set of actions the agent gets to choose from.
-- There's a transition function that defines the probability of ending up in state S’ at the next time, given at the current time, the agent is in state s and took action a.
-- There's a reward function that assigns reward for that transition when you were in a state s, took action a, landed in state s prime.
-- There is a start state, and a discount factor γ that essentially captures that things that are further in the future, we might care less about.
+- There's a set of **states**, then a set of **actions** the agent gets to choose from.
+- There's a **transition** function that defines the probability of ending up in state S’ at the next time, given at the current time, the agent is in state s and took action a.
+- There's a **reward** function that assigns reward for that transition when you were in a state s, took action a, landed in state s prime.
+- There is a **start** state, and a **discount** factor γ that essentially captures that things that are further in the future, we might care less about.
 - For eg, we care more about getting a reward today than getting a reward, let's say a year from now and so the discounting says we should discount future rewards.
-- Horizon H is basically Number of Timesteps
+- **Horizon** H is basically Number of Timesteps
 
 ### The end goal
 
 ![goal](Assets/GOAL_MDP.jpeg)
 
 - Basically this scary math equation means that the goal is to maximize the expected discounted sum of rewards accumulated over time.
-- This can be achieved by finding a policy that suits our purpose.
+- This can be achieved by finding a **policy** that suits our purpose.
 - The easiest way to explain policy is that it is the agent’s strategy or A policy defines the learning agent's way of behaving at a given time.
-- In general, the goal of any RL algorithm is to learn an optimal policy that achieves a specific goal. 
+- In general, the goal of any RL algorithm is to learn an **optimal** policy that achieves a specific goal. 
 - There are two ways to solve an MDP in case of Exact Solution Methods. **Value iteration** and **Policy iteration**
 - These methods can be used to solve a variety of problems, like the Multi Armed Bandit Problem, which is a dilemma of Exploration/Exploitation. 
 
@@ -124,7 +124,7 @@ Note: On linux, some shells such as Zsh require quotation marks around brackets 
 - The main idea is that in both algorithms, some optimization technique guarantees small but correct steps towards one of the answers (policies). Because it only approximates this technique we do not have a guarantee, but it works out in practice! 
 - In genetic algorithms, you generate random changes and pick whichever ones happen to perform well. 
 - Instead, algorithms like TRPO, PPO change your policy in a direction where there's good reason to believe it will perform well (i.e., in the direction that increases the policy objective). 
-- It's not guaranteed to always be a strict improvement, but unlike genetic algorithms, which treat the optimized thing AFAIK as a black box, you treat it as a white box that you put into some informed optimizer like stochastic gradient descent.
+- It's not guaranteed to always be a strict improvement, but unlike genetic algorithms, which treat the optimized thing as a black box, you treat it as a white box that you put into some informed optimizer like stochastic gradient descent.
 - This approach implies that the algorithm won't spend much time trying random mutations that won't do any better.
 
 ## Step 2: Testing the environment
@@ -165,7 +165,7 @@ log_path = os.path.join('Training', 'Logs')
 model = PPO("CnnPolicy", env, verbose=1, tensorboard_log=log_path)
 model.learn(total_timesteps = 2000000)
 ```
-- In this step we are training the Model using PPO and the policy we are using is the CNNPolicy which works really well with box type environments where graphics image is generated
+- In this step we are training the Model using PPO and the policy we are using is the CNNPolicy which works really well with box type environments where graphics image is generated. The logs are helpful for debugging using tensorboard. 
 
 ## Step 4: Save model
 
